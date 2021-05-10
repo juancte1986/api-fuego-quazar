@@ -1,0 +1,21 @@
+package com.mercadolibre.challenge.dto;
+
+import javax.validation.constraints.NotNull;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class SatelliteSplitDTO {
+	
+	@NotNull
+	private String[] message;
+	
+	@NotNull
+	private Double distance;
+}
